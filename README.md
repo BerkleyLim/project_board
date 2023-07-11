@@ -11,9 +11,9 @@ Spring Boot + React CRUD형 게시판 만들기 프로젝트 안내서
 차후 적용 예정
 ```
 
-# 개발 순서 (블로그 참조 - 업로드 예정)
-- (1) React 셋팅
-- (2) React UI 구성
+# 개발 순서 (블로그 참조)
+- [(1) React 셋팅](https://berkley.tistory.com/23)
+- [(2) React UI 구성](https://berkley.tistory.com/24)
 - (3) Spring Boot 설치
 - (4) DB 테이블 설계
 - (5) My-Batis 연동
