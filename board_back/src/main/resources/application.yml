@@ -1,0 +1,32 @@
+server:
+  shutdown: graceful
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/github?useSSL=false&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true&autoReconnect=true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: 1111 # 비밀번호 수정
+    username: root
+
+  devtools:
+    livereload:
+      enabled: true
+
+  sql:
+    init:
+      encoding: UTF-8
+
+mybatis:
+  type-aliases-package: com.example.board_back.entity
+  configuration:
+    cache-enabled: true
+    use-column-label: true
+    use-generated-keys: false
+    map-underscore-to-camel-case: true
+    default-statement-timeout: 25000
+    jdbc-type-for-null: NULL
+  mapper-locations: classpath:/mapper/*Mapper.xml
