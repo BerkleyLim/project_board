@@ -15,8 +15,9 @@ Spring Boot + React CRUD형 게시판 만들기 프로젝트 안내서
 - [(1) React 셋팅](https://berkley.tistory.com/23)
 - [(2) React UI 구성](https://berkley.tistory.com/24)
 - [(3) React state로 이용하여 CRUD 구성](https://berkley.tistory.com/25)
-- (4) Spring Boot 설치
-- (5) DB 테이블 설계
+- [(4) DBeaver로 DB 생성과 Table 및 Filed 생성](https://berkley.tistory.com/26)
+- [(5) SQL문 CRUD 설계](https://berkley.tistory.com/27)
+- [(6) Spring Boot 설치 및 셋팅](https://berkley.tistory.com/28)
 - (6) My-Batis 연동
 - (7) API 설계
 - (8) Front 단에서 axios를 통한 Back-End 구현
