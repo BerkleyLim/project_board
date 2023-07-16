@@ -7,7 +7,6 @@ Spring Boot + React CRUD형 게시판 만들기 프로젝트 안내서
 - 간단한 게시판을 구현하는 방법의 대해 터득한다.
 
 # Getting Start
-```
 1) git clone을 하였을 경우 아래와 같이 명령어를 실행합니다.
 ```
 $ npm install
