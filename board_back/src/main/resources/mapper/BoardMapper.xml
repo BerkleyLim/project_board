@@ -2,8 +2,35 @@
 <!DOCTYPE mapper PUBLIC "//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.example.board_back.mapper.BoardMapper">
   
+  <!-- id : Mapper 인터페이스에 사용할 메소드명 -->
+  <!-- resultType : Response Parameter에 반환할 변수 값의 대한 내용 -->
+  <!-- parameterType : Request Parameter에 들어갈 변수 값을 저장된 내용 -->
+
+  <!-- 전체 파라미터 조회 관련 게시글 -->
   <select id="selectList" resultType="Board">
     select * from board
   </select>
+
+  
+  <!-- mybatis에서 param1, param2 를 이용하여 삽입이 가능합니다. -->
+  <!-- 이는 mapper에서 첫번째 파라미터가 title이고, 두번째 파라미터는 contents입니다. -->
+  <!-- 생성 sql문  -->
+  <insert id="insertBoard">
+    <!-- insert into scroll_board (title, contents) value (#{title}, #{contents}) -->
+    insert into scroll_board (title, contents) value (#{param1}, #{param2})
+  </insert>
+
+  <!-- 현재 내용 수정 sql문 -->
+  <update id="updateBoard" parameterType="Board">
+      update scroll_board set
+      title=#{title} ,
+      contents=#{contents} 
+    where bno = #{bno}
+  </update>
+
+  <!-- 현재 내용을 삭제하는 sql문 -->
+  <delete id="deleteBoard">
+    delete from scroll_board where bno=#{bno}
+  </delete>
 
 </mapper>
