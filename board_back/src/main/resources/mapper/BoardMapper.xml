@@ -17,12 +17,12 @@
   <!-- 생성 sql문  -->
   <insert id="insertBoard">
     <!-- insert into scroll_board (title, contents) value (#{title}, #{contents}) -->
-    insert into scroll_board (title, contents) value (#{param1}, #{param2})
+    insert into board (title, contents) value (#{param1}, #{param2})
   </insert>
 
   <!-- 현재 내용 수정 sql문 -->
   <update id="updateBoard" parameterType="Board">
-      update scroll_board set
+      update board set
       title=#{title} ,
       contents=#{contents} 
     where bno = #{bno}
@@ -30,7 +30,7 @@
 
   <!-- 현재 내용을 삭제하는 sql문 -->
   <delete id="deleteBoard">
-    delete from scroll_board where bno=#{bno}
+    delete from board where bno=#{bno}
   </delete>
 
 </mapper>
