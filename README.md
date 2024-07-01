@@ -37,7 +37,7 @@ Spring Boot + React CRUD형 게시판 만들기 프로젝트 안내서
 <br/>
 
 ### board_back
-1. Spring Boot 실행 전 <strong>scroll_project_back</strong> 디렉토리에 있는 SQL 파일을 이용해 DBeaver로 MYSQL에 데이터를 삽입합니다.
+1. Spring Boot 실행 전 <strong>board_sql</strong> 디렉토리에 있는 SQL 파일을 이용해 DBeaver로 MYSQL에 데이터를 삽입합니다.
 2. SQL에 삽입하였을 경우 <strong>src/main/resources/application.yml</strong> 파일을 열고 아래와 같이 10번째 줄에 본인이 저장한 DB 환경 설정을 변경해줍니다.
     ```yaml
     jdbc:mysql://localhost:3306/{본인DB명}?useSSL=false&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true&autoReconnect=true
