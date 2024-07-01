@@ -13,8 +13,17 @@ Spring Boot + React CRUD형 게시판 만들기 프로젝트 안내서
 ## Getting Started (입문자용)
 
 ### 공통
+1. GitHub 저장소를 클론합니다.
+    ```bash
+    $ git clone https://github.com/BerkleyLim/project_board.git
+    ```
+
+<br/>
+
+### board_front (프론트엔드 서버)
 1. git clone을 하였을 경우 아래와 같이 명령어를 실행합니다.
     ```bash
+    $ cd project_board/board_front
     $ npm install
     ```
 2. 다음으로는 아래와 같이 개발모드로 실행 가능합니다.
@@ -24,19 +33,7 @@ Spring Boot + React CRUD형 게시판 만들기 프로젝트 안내서
 
 <br/>
 
-### board_front
-1. git clone을 하였을 경우 아래와 같이 명령어를 실행합니다.
-    ```bash
-    $ npm install
-    ```
-2. 다음으로는 아래와 같이 개발모드로 실행 가능합니다.
-    ```bash
-    $ npm run start
-    ```
-
-<br/>
-
-### board_back
+### board_back (백엔드 서버)
 1. Spring Boot 실행 전 <strong>board_sql</strong> 디렉토리에 있는 SQL 파일을 이용해 DBeaver로 MYSQL에 데이터를 삽입합니다.
 2. SQL에 삽입하였을 경우 <strong>src/main/resources/application.yml</strong> 파일을 열고 아래와 같이 10번째 줄에 본인이 저장한 DB 환경 설정을 변경해줍니다.
     ```yaml
@@ -44,6 +41,7 @@ Spring Boot + React CRUD형 게시판 만들기 프로젝트 안내서
     ```
 3. git clone을 하였을 경우 아래와 같이 명령어를 실행합니다.
     ```bash
+    $ cd project_board/board_back
     $ mvn package
     ```
 4. 다음으로는 아래와 같이 Maven Spring Boot 실행 가능합니다.
